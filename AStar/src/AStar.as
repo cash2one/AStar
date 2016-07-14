@@ -1,8 +1,6 @@
 package
 {
-	import flash.display.Sprite;
-	
-	public class AStar extends Sprite
+	public class AStar
 	{
 		private var _open:Array;//开放列表
 		private var _closed:Array;//封闭列表
