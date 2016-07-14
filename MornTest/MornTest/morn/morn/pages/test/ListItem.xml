@@ -1,0 +1,5 @@
+<View width="177" height="95" sceneColor="0xffffff" layers="1,1,0,0,第 1 层">
+  <Image skin="png.comp.bg" x="0" y="0" layer="1" width="177" height="95"/>
+  <Button label="label" skin="png.comp.button" x="15" y="49" layer="1"/>
+  <Button skin="png.comp.btn_close" x="140" y="5" layer="1"/>
+</View>

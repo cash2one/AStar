@@ -1,0 +1,252 @@
+package
+{
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import flash.display.BlendMode;
+	import flash.display.DisplayObject;
+	import flash.display.Shape;
+	import flash.display.Sprite;
+	import flash.events.MouseEvent;
+	import flash.ui.Mouse;
+	
+	import morn.core.handlers.Handler;
+	
+	import org.conf.GlobalConfig;
+	import org.conf.ResConfig;
+	
+	import visit.event.DataEvent;
+	import visit.instant.humanBody.data.HumanBodyData;
+	import visit.instant.main.data.MainData;
+	import visit.ui.instant.humanBody.HumanBodyUI;
+	
+	/** 人体示意图 
+	 * @author huang
+	 */	
+	public class Test4 extends Sprite
+	{
+		private const PENCIL_SIZE:Number = 2;
+		private const ERASER_SIZE:Number = 7;
+		
+		private var mLastIndex:uint;
+		//private var mPencil:MovieClip;
+		//private var mEraser:MovieClip;
+		private var mNowMouseStyle:DisplayObject;
+		private var mDrawBmd:BitmapData;
+		private var mDrawBmp:Bitmap;
+		private var mLineCanvas:Shape;
+		private var mAction:String = BlendMode.NORMAL;
+		private var mPoint:Array = [];
+		public function HumanBodyView()
+		{
+			super();
+		}
+		override protected function initialize():void{
+			super.initialize();
+			this.setViewBorderEffect();
+			//mPencil = getResSkin(ViewConfig.PENCIL_CURSOR_STYLE) as MovieClip;
+			//mEraser = getResSkin(ViewConfig.ERASER_CURSOR_STYLE) as MovieClip;
+			mPencil.visible=false;
+			mEraser.visible=false;
+			mPencil.gotoAndStop(1);
+			mEraser.gotoAndStop(1);
+			mPencil.mouseEnabled = mPencil.mouseChildren = false;
+			mEraser.mouseEnabled = mEraser.mouseChildren = false;
+			
+			mLineCanvas = new Shape();
+			mDrawBmd = new BitmapData(imageBox.width,imageBox.height,true,0);
+			mDrawBmp = new Bitmap(mDrawBmd);
+			imageBox.addChild(mDrawBmp);
+			
+			//responsiveShow();
+		}
+		
+		private function doctorStopVisitHandler(e:String,data:Object = null):void
+		{
+			mDrawBmd.fillRect(mDrawBmd.rect,0x00000000);
+			HumanBodyData.ins.lineList = [];
+		}
+		
+		private function onMouseDown(e:MouseEvent):void{
+			mLineCanvas.graphics.clear();
+			mLineCanvas.graphics.lineStyle(mAction == BlendMode.NORMAL ? PENCIL_SIZE : ERASER_SIZE , HumanBodyData.ins.selfData.clientType == GlobalConfig.DOCTOR ? 0xFF0000 : 0x0000FF);
+			mLineCanvas.graphics.moveTo(imageBox.mouseX,imageBox.mouseY);
+			mLineCanvas.graphics.lineTo(imageBox.mouseX,imageBox.mouseY);
+			mDrawBmd.draw(mLineCanvas, null, null, mAction);
+			mPoint = [];
+			mPoint.push({"action":mAction,"type":HumanBodyData.ins.selfData.clientType,"x":imageBox.mouseX,"y":imageBox.mouseY});
+			this.stage.addEventListener(MouseEvent.MOUSE_UP,mouseUp);
+		}
+		
+		private function onMouseMove(e:MouseEvent ):void{
+			Mouse.hide();
+			mNowMouseStyle.x = this.mouseX;
+			mNowMouseStyle.y = this.mouseY;
+			if(!mNowMouseStyle.visible) mNowMouseStyle.visible = true;
+			if(!e.buttonDown) return;
+			HumanBodyData.ins.isDrawing = true;
+			mLineCanvas.graphics.lineTo(imageBox.mouseX,imageBox.mouseY);
+			mDrawBmd.draw(mLineCanvas, null, null, mAction);		
+			mPoint.push({"action":mAction,"type":HumanBodyData.ins.selfData.clientType,"x":imageBox.mouseX,"y":imageBox.mouseY});
+		}
+		
+		private function onMouseOut(e:MouseEvent):void{
+			Mouse.show();
+			mNowMouseStyle.visible = false;
+		}
+		
+		private function mouseUp(e:MouseEvent):void {
+			HumanBodyData.ins.isDrawing = false;
+			this.stage.removeEventListener(MouseEvent.MOUSE_UP,mouseUp);
+			HumanBodyData.ins.addLineData(mPoint);
+		}
+		
+		private function onPencilBtnClick(e:MouseEvent):void{
+			mAction = BlendMode.NORMAL;
+			
+			if(this.contains(mNowMouseStyle)) this.removeChild(mNowMouseStyle);
+			mNowMouseStyle = mPencil;
+			mNowMouseStyle.visible = false;
+			this.addChild(mNowMouseStyle);
+		}
+		
+		private function onEraserBtnClick(e:MouseEvent):void{
+			mAction = BlendMode.ERASE;
+			
+			if(this.contains(mNowMouseStyle)) this.removeChild(mNowMouseStyle);
+			mNowMouseStyle = mEraser;
+			mNowMouseStyle.visible = false;
+			this.addChild(mNowMouseStyle);
+		}
+		
+		private function onClearAllBtnClick(e:MouseEvent):void{
+			mDrawBmd.fillRect(mDrawBmd.rect,0x00000000);
+			HumanBodyData.ins.clearAllLineData();
+		}
+		
+		private function onChangeHumanBodyDraw(e:String = null,data:Object = null):void{
+			if(lineList == null) return;
+			var lineCount:uint = lineList.length;
+			if(HumanBodyData.ins.isClear){
+				mDrawBmd.fillRect(mDrawBmd.rect,0x00000000);
+				HumanBodyData.ins.isClear = false;
+				return;
+			}
+			mLastIndex = lineCount - 1;
+			var lineData:Array = lineList[mLastIndex];
+			mLineCanvas.graphics.clear();
+			mLineCanvas.graphics.lineStyle(lineData[0].action == BlendMode.NORMAL ? PENCIL_SIZE : ERASER_SIZE , lineData[0].type == GlobalConfig.DOCTOR ? 0xFF0000 : 0x0000FF);
+			mLineCanvas.graphics.moveTo(lineData[0].x,lineData[0].y);
+			mDrawBmd.draw(mLineCanvas, null, null,lineData[0].action);
+			var len:uint = lineData.length;
+			for(var i:uint = 1; i < len; ++i){
+				mLineCanvas.graphics.lineTo(lineData[i].x,lineData[i].y);
+				mDrawBmd.draw(mLineCanvas, null, null, lineData[i].action);	
+				trace("action:" + lineData[i].action + "x:" + lineData[i].x + "y:" + lineData[i].y);
+			}
+		}
+		
+		private function onUpdateHumanBodyDraw(e:String,data:Object):void{
+			readLineData();
+		}
+		
+		private function readLineData():void{
+			if(lineList == null) return;
+			var lineCount:uint = lineList.length;
+			if(HumanBodyData.ins.isClear){
+				mDrawBmd.fillRect(mDrawBmd.rect,0x00000000);
+				HumanBodyData.ins.isClear = false;
+			}
+			for(var i:uint = 0; i < lineCount; ++i){
+				var len:uint = lineList[i].length;
+				mLineCanvas.graphics.clear();
+				mLineCanvas.graphics.lineStyle(lineList[i][0].action == BlendMode.NORMAL ? PENCIL_SIZE : ERASER_SIZE , lineList[i][0].type == GlobalConfig.DOCTOR ? 0xFF0000 : 0x0000FF);
+				mLineCanvas.graphics.moveTo(lineList[i][0].x,lineList[i][0].y);
+				mDrawBmd.draw(mLineCanvas, null, null, lineList[i][0].action);
+				for(var j:uint = 0; j < len; ++j){
+					mLineCanvas.graphics.lineTo(lineList[i][j].x,lineList[i][j].y);
+					mDrawBmd.draw(mLineCanvas, null, null, lineList[i][j].action);	
+					trace("action:" + lineList[i][j].action + "x:" + lineList[i][j].x + "y:" + lineList[i][j].y);
+				}
+			}
+		}
+		
+		private function get lineList():Array{
+			return HumanBodyData.ins.lineList;
+		}
+		
+		private function updateView():void{
+			mAction = BlendMode.NORMAL;
+			mNowMouseStyle = mPencil;
+			mNowMouseStyle.visible = false;
+			this.addChild(mNowMouseStyle);
+			//			if(!HumanBodyData.ins.getRemoteSo()){
+			readLineData();
+			//			}
+		}
+		
+		/**
+		 * 用户被分诊完成了，把这个模块清空数据，关闭页面
+		 */		
+		private function onClearAllInfo(e:String = null,data:Object = null):void
+		{
+			onClearAllBtnClick(null);
+			this.close();
+		}
+		
+		override protected function onAddToStage():void{
+			addDataEvent(DataEvent.CHANGE_HUMAN_BODY_DRAW,onChangeHumanBodyDraw);
+			addDataEvent(DataEvent.UPDATE_HUMAN_BODY_DRAW,onUpdateHumanBodyDraw);
+			addDataEvent(DataEvent.CLEAR_USERCASEHISTORY_INFO, onClearAllInfo);
+			addDataEvent(DataEvent.DOCTOR_STOP_VISIT,doctorStopVisitHandler);
+			
+			imageBox.addEventListener(MouseEvent.MOUSE_DOWN,onMouseDown);
+			imageBox.addEventListener(MouseEvent.MOUSE_MOVE,onMouseMove);
+			imageBox.addEventListener(MouseEvent.MOUSE_OUT,onMouseOut);
+			pencilBtn.addEventListener(MouseEvent.CLICK,onPencilBtnClick);
+			eraserBtn.addEventListener(MouseEvent.CLICK,onEraserBtnClick);
+			clearAllBtn.addEventListener(MouseEvent.CLICK,onClearAllBtnClick);
+			//			bodyImg.url = ResConfig.DIRECTORY + "/images/body.png";
+			
+			btnMan.clickHandler = new Handler(onClickMan);
+			btnWomen.clickHandler = new Handler(onClickWomen);
+			onClickMan()
+			updateView();
+		}
+		
+		override protected function onRemoveFromStage():void{
+			removeDataEvent(DataEvent.CHANGE_HUMAN_BODY_DRAW,onChangeHumanBodyDraw);
+			removeDataEvent(DataEvent.UPDATE_HUMAN_BODY_DRAW,onUpdateHumanBodyDraw);
+			removeDataEvent(DataEvent.CLEAR_USERCASEHISTORY_INFO, onClearAllInfo);
+			removeDataEvent(DataEvent.DOCTOR_STOP_VISIT,doctorStopVisitHandler);
+			
+			imageBox.removeEventListener(MouseEvent.MOUSE_DOWN,onMouseDown);
+			imageBox.removeEventListener(MouseEvent.MOUSE_MOVE,onMouseMove);
+			imageBox.removeEventListener(MouseEvent.MOUSE_OUT,onMouseOut);
+			pencilBtn.removeEventListener(MouseEvent.CLICK,onPencilBtnClick);
+			eraserBtn.removeEventListener(MouseEvent.CLICK,onEraserBtnClick);
+			clearAllBtn.removeEventListener(MouseEvent.CLICK,onClearAllBtnClick);
+			
+			btnMan.clickHandler = null;
+			btnWomen.clickHandler = null;
+			bodyImg.url=null;
+		}
+		
+		private function onClickMan():void
+		{
+			bodyImg.url = ResConfig.DIRECTORY + "/images/body.png";
+			btnMan.disabled = true;
+			btnMan.selected = true;
+			btnWomen.disabled = false;
+			btnWomen.selected = false;
+		}
+		private function onClickWomen():void
+		{
+			bodyImg.url = ResConfig.DIRECTORY + "/images/body1.png";
+			btnMan.disabled = false;
+			btnMan.selected = false;
+			btnWomen.disabled = true;
+			btnWomen.selected = true;
+		}
+		
+	}
+}

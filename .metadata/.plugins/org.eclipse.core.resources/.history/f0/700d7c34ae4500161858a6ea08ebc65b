@@ -1,0 +1,85 @@
+package
+{
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import flash.display.BlendMode;
+	import flash.display.Shape;
+	import flash.display.Sprite;
+	import flash.events.MouseEvent;
+	import flash.text.TextField;
+	import flash.text.TextFieldType;
+	import flash.text.TextFormat;
+	
+	import morn.core.components.TextInput;
+	import morn.core.events.UIEvent;
+
+	public class Test1 extends Sprite
+	{
+		public function Test1()
+		{
+			var spr:Shape = new Shape();
+			addChild(spr);
+			spr.y = 100;
+			
+			var bit:Bitmap = new Bitmap();
+			addChild(bit);
+			
+			var bmd:BitmapData = new BitmapData(100,100);
+			bit.bitmapData = bmd;
+			
+//			spr.graphics.beginFill( 0xffffff); 
+			spr.graphics.lineStyle( 2, 0xff0000);
+			spr.graphics.moveTo( 10,10);
+			spr.graphics.lineTo( 20, 20);
+			spr.graphics.lineTo( 20, 0);
+			spr.graphics.endFill(); 
+			bmd.draw(spr,null,null,null,null,true);
+			spr.graphics.clear();
+//			spr.graphics.beginFill( 0xffffff); 
+			spr.graphics.lineStyle( 2, 0xff0000);
+			spr.graphics.moveTo( 30,30);
+			spr.graphics.lineTo( 40, 40);
+			spr.graphics.lineTo( 40, 0);
+			spr.graphics.endFill(); 
+			bmd.draw(spr,null,null,null,null,true);
+			
+//			var d:CustomSprite = new CustomSprite(100);
+//			
+//			var c:CustomSprite = new CustomSprite();
+//			addChild(c);
+//			
+//			var bmd:BitmapData = new BitmapData(100,100);
+//			bmd.draw(d,null,null,BlendMode.NORMAL);
+//			
+//			bmd.draw(c,null,null,BlendMode.ERASE);
+//			
+//			var bit:Bitmap = new Bitmap();
+//			bit.bitmapData = bmd;
+//			addChild(bit);
+//			bit.opaqueBackground
+		}
+		
+	}
+}
+
+import flash.display.Sprite;  
+import flash.events.MouseEvent;  
+
+class CustomSprite extends Sprite {  
+	private var bgColor:uint = 0x00CCFF;  
+	
+	public function CustomSprite(size:int = 50) {  
+		draw(size, size);  
+	}  
+	
+	private function draw(w:uint, h:uint):void {  
+		graphics.beginFill(bgColor);  
+		graphics.drawRect(0, 0, w, h);  
+		graphics.endFill();  
+		
+		graphics.clear();
+		graphics.beginFill(bgColor); 
+		graphics.drawCircle(100, 100, w);  
+		graphics.endFill(); 
+	}  
+}  

@@ -29,6 +29,9 @@ package morn.core.events {
 		/**项渲染*/
 		public static const ITEM_RENDER:String = "listRender";
 		
+		/**键盘事件，按Enter键，派发更改焦点*/
+		public static const FOCUS_NEED_CHANGE:String = "focus_need_change";
+		
 		private var _data:*;
 		
 		public function UIEvent(type:String, data:*, bubbles:Boolean = false, cancelable:Boolean = false) {

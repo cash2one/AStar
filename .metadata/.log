@@ -1,0 +1,2087 @@
+!SESSION 2016-06-23 17:28:56.586 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-06-23 17:29:10.917
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-06-23 17:29:24.271
+!MESSAGE Avoiding non-existent source container src while figuring out files to copy to output folder.
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.compiler.internal.BuilderUtils.copyDependents(BuilderUtils.java:494)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexProjectBuilder.build(FlexProjectBuilder.java:425)
+	at com.adobe.flexbuilder.project.compiler.internal.FlexIncrementalBuilder.build(FlexIncrementalBuilder.java:187)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2016-06-24 08:30:38.959 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-06-24 08:30:53.625
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-06-24 09:10:51.637
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-24 09:10:51.637
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1a729c1)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1a729c1)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-24 09:10:51.637
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1a669d5)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1a669d5)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.sf.easyexplore 1 4 2016-06-24 10:51:53.957
+!MESSAGE running: explorer.exe D:\GitAstar\AStar\bin-debug
+
+
+!ENTRY org.sf.easyexplore 1 4 2016-06-24 11:09:36.282
+!MESSAGE running: explorer.exe D:\GitAstar\AStar\bin-debug
+
+
+!ENTRY org.sf.easyexplore 1 4 2016-06-24 11:11:28.080
+!MESSAGE running: explorer.exe D:\GitAstar\MornUILib\bin
+
+
+!ENTRY org.sf.easyexplore 4 4 2016-06-24 16:01:05.293
+!MESSAGE java.lang.NullPointerException
+	at org.sf.easyexplore.actions.EasyExploreAction.selectionChanged(EasyExploreAction.java:99)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.ObjectPluginAction.partClosed(ObjectPluginAction.java:49)
+	at org.eclipse.ui.internal.PartListenerList2$3.run(PartListenerList2.java:100)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:888)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:55)
+	at org.eclipse.ui.internal.PartListenerList2.firePartClosed(PartListenerList2.java:98)
+	at org.eclipse.ui.internal.PartService.firePartClosed(PartService.java:227)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.firePartClosed(WorkbenchPagePartList.java:39)
+	at org.eclipse.ui.internal.PartList.partClosed(PartList.java:274)
+	at org.eclipse.ui.internal.PartList.removePart(PartList.java:186)
+	at org.eclipse.ui.internal.WorkbenchPage.disposePart(WorkbenchPage.java:1796)
+	at org.eclipse.ui.internal.WorkbenchPage.partRemoved(WorkbenchPage.java:1789)
+	at org.eclipse.ui.internal.ViewFactory.releaseView(ViewFactory.java:257)
+	at org.eclipse.ui.internal.Perspective.dispose(Perspective.java:292)
+	at org.eclipse.ui.internal.WorkbenchPage.dispose(WorkbenchPage.java:1868)
+	at org.eclipse.ui.internal.WorkbenchWindow.closeAllPages(WorkbenchWindow.java:887)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1722)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:730)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$0(WorkbenchWindow.java:715)
+	at org.eclipse.ui.internal.WorkbenchWindow$5.run(WorkbenchWindow.java:860)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:858)
+	at org.eclipse.jface.window.WindowManager.close(WindowManager.java:109)
+	at org.eclipse.ui.internal.Workbench$18.run(Workbench.java:1109)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1106)
+	at org.eclipse.ui.internal.Workbench.access$15(Workbench.java:1035)
+	at org.eclipse.ui.internal.Workbench$25.run(Workbench.java:1279)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1277)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1249)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:727)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$0(WorkbenchWindow.java:715)
+	at org.eclipse.ui.internal.WorkbenchWindow$5.run(WorkbenchWindow.java:860)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:858)
+	at org.eclipse.jface.window.Window.handleShellCloseEvent(Window.java:741)
+	at org.eclipse.jface.window.Window$3.shellClosed(Window.java:687)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1677)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4530)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1610)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2061)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2525)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4623)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1610)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2061)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2525)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4623)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1610)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2061)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2530)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!SESSION 2016-06-28 09:29:14.249 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-06-28 09:29:28.455
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-06-28 09:32:35.630
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-28 09:32:35.630
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1aa5257)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1aa5257)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-28 09:32:35.630
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@103fbbe)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@103fbbe)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-06-28 17:31:14.518 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-06-28 17:31:20.368
+!MESSAGE Product = null version = 460 edition = stnd
+!SESSION 2016-06-29 08:34:17.870 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-06-29 08:34:36.451
+!MESSAGE Product = null version = 460 edition = stnd
+!SESSION 2016-06-29 09:25:37.226 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-06-29 09:25:46.993
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-06-29 11:42:53.925
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-29 11:42:53.925
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@cb771e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@cb771e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-29 11:42:53.925
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1f98f80)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1f98f80)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-06-30 08:25:55.401 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-06-30 08:26:46.082
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-06-30 08:37:04.523
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-30 08:37:04.523
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1a83d23)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1a83d23)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-30 08:37:04.524
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@45f1ca)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@45f1ca)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-07-01 08:33:10.102 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-01 08:33:23.750
+!MESSAGE Product = null version = 460 edition = stnd
+!SESSION 2016-07-01 14:08:54.366 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-07-01 14:09:05.666
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-01 14:09:32.335
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-01 14:20:56.151
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-01 14:20:56.151
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@da431b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@da431b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-01 14:20:56.152
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@16bb691)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@16bb691)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY CodeModel 4 1 2016-07-01 14:21:47.178
+!MESSAGE Parsing error
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.fillInOffsets(NodeBase.java:527)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ExpressionNode.normalize(ExpressionNode.java:66)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ExpressionNode.normalize(ExpressionNode.java:63)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.setChildren(FunctionNode.java:152)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.normalize(FunctionNode.java:177)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.setChildren(ClassNode.java:224)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.normalize(ClassNode.java:232)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.PackageNode.setChildren(PackageNode.java:106)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.postProcess(NodeBase.java:440)
+	at com.adobe.flexbuilder.codemodel.internal.parsing.BaseASTreeParser.parseFile(BaseASTreeParser.java:180)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.BaseFileHandler.parseToASTree(BaseFileHandler.java:244)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ASFileHandler.parseFile(ASFileHandler.java:101)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ResourceHandlerManager.parseFile(ResourceHandlerManager.java:242)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.parseFile(Project.java:1137)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.addUnsavedFile(Project.java:705)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredFiles(Project.java:799)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredUpdates(Project.java:771)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.getLiveTreeBaseNode(Project.java:1174)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.findFileNodeInProject(Project.java:1238)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getBaseFileNode(BaseASModel.java:739)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getOffsetInformation(BaseASModel.java:1424)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getOffsetInformation(BaseASModel.java:1416)
+	at com.adobe.flexbuilder.debug.ui.variables.FlexDebugHover.getExpression(FlexDebugHover.java:132)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.update(FlexEditorWatchAction.java:149)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.selectionChanged(FlexEditorWatchAction.java:104)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:289)
+	at org.eclipse.ui.internal.ViewerActionBuilder$ViewerContribution.selectionChanged(ViewerActionBuilder.java:191)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:164)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:162)
+	at org.eclipse.jface.text.TextViewer.fireSelectionChanged(TextViewer.java:2732)
+	at org.eclipse.jface.text.TextViewer.selectionChanged(TextViewer.java:2711)
+	at org.eclipse.jface.text.TextViewer$4.widgetSelected(TextViewer.java:1830)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.StyledText.sendSelectionEvent(StyledText.java:8035)
+	at org.eclipse.swt.custom.StyledText.clearSelection(StyledText.java:1710)
+	at org.eclipse.swt.custom.StyledText.setSelection(StyledText.java:9478)
+	at org.eclipse.swt.custom.StyledText.updateSelection(StyledText.java:10186)
+	at org.eclipse.swt.custom.StyledText.handleTextChanged(StyledText.java:6206)
+	at org.eclipse.swt.custom.StyledText$6.textChanged(StyledText.java:5615)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.fireTextChanged(DefaultDocumentAdapter.java:347)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.documentChanged(DefaultDocumentAdapter.java:291)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:760)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:736)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:721)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:796)
+	at org.eclipse.jface.text.projection.ProjectionDocument.fireDocumentChanged(ProjectionDocument.java:777)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1191)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1210)
+	at org.eclipse.jface.text.projection.ProjectionDocument.replace(ProjectionDocument.java:629)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(DefaultDocumentAdapter.java:248)
+	at org.eclipse.swt.custom.StyledText.handleCompositionChanged(StyledText.java:5783)
+	at org.eclipse.swt.custom.StyledText$8.handleEvent(StyledText.java:5659)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.IME.WM_IME_COMPOSITION(IME.java:505)
+	at org.eclipse.swt.widgets.Canvas.WM_IME_COMPOSITION(Canvas.java:368)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4554)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2530)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+!SESSION 2016-07-02 10:08:07.374 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-02 10:08:18.302
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-02 10:08:27.187
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-02 10:08:27.187
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@f23ad3)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@f23ad3)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-02 10:08:27.187
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@f42ea0)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@f42ea0)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-07-04 08:30:09.933 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-04 08:31:23.770
+!MESSAGE Product = null version = 460 edition = stnd
+!SESSION 2016-07-04 14:38:06.718 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-04 14:38:19.932
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-04 14:38:24.369
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-04 14:38:24.370
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1c436b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1c436b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-04 14:38:24.370
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@18e45a8)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@18e45a8)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-07-05 08:35:58.398 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-05 08:36:05.765
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-05 08:42:38.548
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-05 08:42:38.548
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1d7ae87)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1d7ae87)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-05 08:42:38.548
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1032d4b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1032d4b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-07-05 09:45:57.728 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-05 09:46:10.047
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-05 09:46:15.013
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-05 09:46:15.013
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@701230)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@701230)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-05 09:46:15.013
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1ba39a5)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1ba39a5)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY CodeModel 4 1 2016-07-05 10:47:14.917
+!MESSAGE Parsing error
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.fillInOffsets(NodeBase.java:527)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ExpressionNode.normalize(ExpressionNode.java:66)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.setChildren(VariableNode.java:116)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.normalize(VariableNode.java:103)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.setChildren(FunctionNode.java:152)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.normalize(FunctionNode.java:177)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.setChildren(ClassNode.java:224)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.normalize(ClassNode.java:232)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.PackageNode.setChildren(PackageNode.java:106)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.postProcess(NodeBase.java:440)
+	at com.adobe.flexbuilder.codemodel.internal.parsing.BaseASTreeParser.parseFile(BaseASTreeParser.java:180)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.BaseFileHandler.parseToASTree(BaseFileHandler.java:244)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ASFileHandler.parseFile(ASFileHandler.java:101)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ResourceHandlerManager.parseFile(ResourceHandlerManager.java:242)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.parseFile(Project.java:1137)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.addUnsavedFile(Project.java:705)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredFiles(Project.java:799)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredUpdates(Project.java:771)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.getLiveTreeBaseNode(Project.java:1174)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.findFileNodeInProject(Project.java:1238)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getBaseFileNode(BaseASModel.java:739)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getOffsetInformation(BaseASModel.java:1424)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getOffsetInformation(BaseASModel.java:1416)
+	at com.adobe.flexbuilder.debug.ui.variables.FlexDebugHover.getExpression(FlexDebugHover.java:132)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.update(FlexEditorWatchAction.java:149)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.selectionChanged(FlexEditorWatchAction.java:104)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:289)
+	at org.eclipse.ui.internal.ViewerActionBuilder$ViewerContribution.selectionChanged(ViewerActionBuilder.java:191)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:164)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:162)
+	at org.eclipse.jface.text.TextViewer.fireSelectionChanged(TextViewer.java:2732)
+	at org.eclipse.jface.text.TextViewer.selectionChanged(TextViewer.java:2711)
+	at org.eclipse.jface.text.TextViewer.setSelectedRange(TextViewer.java:2396)
+	at org.eclipse.jface.text.TextViewer$ViewerState.restore(TextViewer.java:1237)
+	at org.eclipse.jface.text.TextViewer.enabledRedrawing(TextViewer.java:5090)
+	at org.eclipse.jface.text.TextViewer.enabledRedrawing(TextViewer.java:5065)
+	at org.eclipse.jface.text.TextViewer.setRedraw(TextViewer.java:5150)
+	at org.eclipse.jface.text.TextViewer.setRedraw(TextViewer.java:5124)
+	at org.eclipse.jface.text.TextViewer$RewriteTarget.setRedraw(TextViewer.java:1067)
+	at com.adobe.flexide.editorcore.editor.FlexSourceViewer$FlexRewriteTarget.setRedraw(FlexSourceViewer.java:291)
+	at org.eclipse.jface.text.TextViewer$DocumentRewriteSessionListener.documentRewriteSessionChanged(TextViewer.java:1478)
+	at org.eclipse.jface.text.AbstractDocument.fireRewriteSessionChanged(AbstractDocument.java:1559)
+	at org.eclipse.jface.text.AbstractDocument.stopRewriteSession(AbstractDocument.java:1648)
+	at org.eclipse.jface.text.TextViewer$FindReplaceTarget.setReplaceAllMode(TextViewer.java:1018)
+	at org.eclipse.ui.texteditor.FindReplaceTarget.setReplaceAllMode(FindReplaceTarget.java:213)
+	at com.adobe.flexide.editorcore.editor.FlexFindReplaceTarget.setReplaceAllMode(FlexFindReplaceTarget.java:168)
+	at org.eclipse.ui.texteditor.FindReplaceDialog.replaceAll(FindReplaceDialog.java:1515)
+	at org.eclipse.ui.texteditor.FindReplaceDialog.access$40(FindReplaceDialog.java:1482)
+	at org.eclipse.ui.texteditor.FindReplaceDialog$1$ReplaceAllRunnable.run(FindReplaceDialog.java:1342)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.FindReplaceDialog.performReplaceAll(FindReplaceDialog.java:1348)
+	at org.eclipse.ui.texteditor.FindReplaceDialog.access$30(FindReplaceDialog.java:1331)
+	at org.eclipse.ui.texteditor.FindReplaceDialog$4.widgetSelected(FindReplaceDialog.java:355)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY CodeModel 4 1 2016-07-05 10:47:20.574
+!MESSAGE Parsing error
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.fillInOffsets(NodeBase.java:527)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ExpressionNode.normalize(ExpressionNode.java:66)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.setChildren(VariableNode.java:116)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.normalize(VariableNode.java:103)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.setChildren(FunctionNode.java:152)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.normalize(FunctionNode.java:177)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.setChildren(ClassNode.java:224)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.normalize(ClassNode.java:232)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.PackageNode.setChildren(PackageNode.java:106)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.postProcess(NodeBase.java:440)
+	at com.adobe.flexbuilder.codemodel.internal.parsing.BaseASTreeParser.parseFile(BaseASTreeParser.java:180)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.BaseFileHandler.parseToASTree(BaseFileHandler.java:244)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ASFileHandler.parseFile(ASFileHandler.java:101)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ResourceHandlerManager.parseFile(ResourceHandlerManager.java:242)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.parseFile(Project.java:1137)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.addUnsavedFile(Project.java:705)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredFiles(Project.java:799)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredUpdates(Project.java:771)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.getLiveTreeBaseNode(Project.java:1174)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.findFileNodeInProject(Project.java:1238)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getBaseFileNode(BaseASModel.java:739)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getOffsetInformation(BaseASModel.java:1424)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getOffsetInformation(BaseASModel.java:1416)
+	at com.adobe.flexbuilder.debug.ui.variables.FlexDebugHover.getExpression(FlexDebugHover.java:132)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.update(FlexEditorWatchAction.java:149)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.selectionChanged(FlexEditorWatchAction.java:104)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:289)
+	at org.eclipse.ui.internal.ViewerActionBuilder$ViewerContribution.selectionChanged(ViewerActionBuilder.java:191)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:164)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:162)
+	at org.eclipse.jface.text.TextViewer.fireSelectionChanged(TextViewer.java:2732)
+	at org.eclipse.jface.text.TextViewer.selectionChanged(TextViewer.java:2711)
+	at org.eclipse.jface.text.TextViewer$4.widgetSelected(TextViewer.java:1830)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.StyledText.sendSelectionEvent(StyledText.java:8035)
+	at org.eclipse.swt.custom.StyledText.clearSelection(StyledText.java:1710)
+	at org.eclipse.swt.custom.StyledText.setSelection(StyledText.java:9478)
+	at org.eclipse.swt.custom.StyledText.updateSelection(StyledText.java:10186)
+	at org.eclipse.swt.custom.StyledText.handleTextChanged(StyledText.java:6206)
+	at org.eclipse.swt.custom.StyledText$6.textChanged(StyledText.java:5615)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.fireTextChanged(DefaultDocumentAdapter.java:347)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.documentChanged(DefaultDocumentAdapter.java:291)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:760)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:736)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:721)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:796)
+	at org.eclipse.jface.text.projection.ProjectionDocument.fireDocumentChanged(ProjectionDocument.java:777)
+	at org.eclipse.jface.text.projection.ProjectionDocument.masterDocumentChanged(ProjectionDocument.java:746)
+	at org.eclipse.jface.text.projection.ProjectionDocumentManager.fireDocumentEvent(ProjectionDocumentManager.java:123)
+	at org.eclipse.jface.text.projection.ProjectionDocumentManager.documentChanged(ProjectionDocumentManager.java:131)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:769)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:736)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:721)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:796)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1191)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1210)
+	at org.eclipse.ui.texteditor.TextViewerDeleteLineTarget.deleteLine(TextViewerDeleteLineTarget.java:388)
+	at org.eclipse.ui.texteditor.DeleteLineAction.run(DeleteLineAction.java:194)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.ui.commands.ActionHandler.execute(ActionHandler.java:185)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerWrapper.execute(LegacyHandlerWrapper.java:109)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2530)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-07-05 10:47:20.583
+!MESSAGE Error getting hover expression
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.get(AbstractDocument.java:1038)
+	at com.adobe.flexbuilder.debug.ui.variables.FlexDebugHover.getExpression(FlexDebugHover.java:172)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.update(FlexEditorWatchAction.java:149)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.selectionChanged(FlexEditorWatchAction.java:104)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:289)
+	at org.eclipse.ui.internal.ViewerActionBuilder$ViewerContribution.selectionChanged(ViewerActionBuilder.java:191)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:164)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:162)
+	at org.eclipse.jface.text.TextViewer.fireSelectionChanged(TextViewer.java:2732)
+	at org.eclipse.jface.text.TextViewer.selectionChanged(TextViewer.java:2711)
+	at org.eclipse.jface.text.TextViewer$4.widgetSelected(TextViewer.java:1830)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.StyledText.sendSelectionEvent(StyledText.java:8035)
+	at org.eclipse.swt.custom.StyledText.clearSelection(StyledText.java:1710)
+	at org.eclipse.swt.custom.StyledText.setSelection(StyledText.java:9478)
+	at org.eclipse.swt.custom.StyledText.updateSelection(StyledText.java:10186)
+	at org.eclipse.swt.custom.StyledText.handleTextChanged(StyledText.java:6206)
+	at org.eclipse.swt.custom.StyledText$6.textChanged(StyledText.java:5615)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.fireTextChanged(DefaultDocumentAdapter.java:347)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.documentChanged(DefaultDocumentAdapter.java:291)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:760)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:736)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:721)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:796)
+	at org.eclipse.jface.text.projection.ProjectionDocument.fireDocumentChanged(ProjectionDocument.java:777)
+	at org.eclipse.jface.text.projection.ProjectionDocument.masterDocumentChanged(ProjectionDocument.java:746)
+	at org.eclipse.jface.text.projection.ProjectionDocumentManager.fireDocumentEvent(ProjectionDocumentManager.java:123)
+	at org.eclipse.jface.text.projection.ProjectionDocumentManager.documentChanged(ProjectionDocumentManager.java:131)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:769)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:736)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:721)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:796)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1191)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1210)
+	at org.eclipse.ui.texteditor.TextViewerDeleteLineTarget.deleteLine(TextViewerDeleteLineTarget.java:388)
+	at org.eclipse.ui.texteditor.DeleteLineAction.run(DeleteLineAction.java:194)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.ui.commands.ActionHandler.execute(ActionHandler.java:185)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerWrapper.execute(LegacyHandlerWrapper.java:109)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2530)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY CodeModel 4 1 2016-07-05 10:47:21.333
+!MESSAGE Parsing error
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.fillInOffsets(NodeBase.java:527)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ExpressionNode.normalize(ExpressionNode.java:66)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.setChildren(VariableNode.java:116)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.normalize(VariableNode.java:103)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.setChildren(FunctionNode.java:152)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.normalize(FunctionNode.java:177)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.setChildren(ClassNode.java:224)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.normalize(ClassNode.java:232)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.PackageNode.setChildren(PackageNode.java:106)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.postProcess(NodeBase.java:440)
+	at com.adobe.flexbuilder.codemodel.internal.parsing.BaseASTreeParser.parseFile(BaseASTreeParser.java:180)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.BaseFileHandler.parseToASTree(BaseFileHandler.java:244)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ASFileHandler.parseFile(ASFileHandler.java:101)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ResourceHandlerManager.parseFile(ResourceHandlerManager.java:242)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.parseFile(Project.java:1137)
+	at com.adobe.flexbuilder.codemodel.internal.project.ProjectManager.reparseSavedFile(ProjectManager.java:815)
+	at com.adobe.flexbuilder.codemodel.internal.project.ProjectManager.fileChanged(ProjectManager.java:605)
+	at com.adobe.flexbuilder.codemodel.internal.project.EclipseProjectListener$ResourceChangeListener.handleParsableFileDelta(EclipseProjectListener.java:319)
+	at com.adobe.flexbuilder.codemodel.internal.project.EclipseProjectListener$ResourceChangeListener.resourceChanged(EclipseProjectListener.java:201)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:75)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:65)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:456)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.saveDocument(TextFileDocumentProvider.java:772)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.performSave(AbstractTextEditor.java:5048)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSave(AbstractTextEditor.java:4837)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.doSave(AbstractTextEditor.java:7177)
+	at org.eclipse.ui.Saveable.doSave(Saveable.java:214)
+	at org.eclipse.ui.internal.SaveableHelper.doSaveModel(SaveableHelper.java:349)
+	at org.eclipse.ui.internal.SaveableHelper$3.run(SaveableHelper.java:195)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:277)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:759)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:756)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2642)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:285)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:264)
+	at org.eclipse.ui.internal.SaveableHelper.saveModels(SaveableHelper.java:207)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:144)
+	at org.eclipse.ui.internal.EditorManager.savePart(EditorManager.java:1399)
+	at org.eclipse.ui.internal.WorkbenchPage.savePart(WorkbenchPage.java:3416)
+	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3429)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:54)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:468)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:786)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:885)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:567)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:508)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2530)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY CodeModel 4 1 2016-07-05 10:47:33.443
+!MESSAGE Parsing error
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.fillInOffsets(NodeBase.java:527)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ExpressionNode.normalize(ExpressionNode.java:66)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.setChildren(VariableNode.java:116)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.normalize(VariableNode.java:103)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.setChildren(FunctionNode.java:152)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.normalize(FunctionNode.java:177)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.setChildren(ClassNode.java:224)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.normalize(ClassNode.java:232)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.PackageNode.setChildren(PackageNode.java:106)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.postProcess(NodeBase.java:440)
+	at com.adobe.flexbuilder.codemodel.internal.parsing.BaseASTreeParser.parseFile(BaseASTreeParser.java:180)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.BaseFileHandler.parseToASTree(BaseFileHandler.java:244)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ASFileHandler.parseFile(ASFileHandler.java:101)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ResourceHandlerManager.parseFile(ResourceHandlerManager.java:242)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.parseFile(Project.java:1137)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.addUnsavedFile(Project.java:705)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredFiles(Project.java:799)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredUpdates(Project.java:771)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.getLiveTreeBaseNode(Project.java:1174)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.findFileNodeInProject(Project.java:1238)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getBaseFileNode(BaseASModel.java:739)
+	at com.adobe.flexide.as.core.ui.outliner.OutlinerActionScriptContentProvider.getElements(OutlinerActionScriptContentProvider.java:241)
+	at org.eclipse.jface.viewers.StructuredViewer.getRawChildren(StructuredViewer.java:1010)
+	at org.eclipse.jface.viewers.ColumnViewer.getRawChildren(ColumnViewer.java:703)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1336)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:391)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:917)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:605)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$1.run(AbstractTreeViewer.java:805)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:782)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:644)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:753)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1533)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:833)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$5.run(AbstractTreeViewer.java:1517)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1443)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:403)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1404)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1510)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:280)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1690)
+	at com.adobe.flexide.as.core.ui.outliner.ActionScriptOutlineUpdater.updateAndPreserveSelection(ActionScriptOutlineUpdater.java:151)
+	at com.adobe.flexide.as.core.ui.outliner.ActionScriptOutlineUpdater.propertyChanged(ActionScriptOutlineUpdater.java:327)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:129)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.firePropertyChange(AbstractTextEditor.java:6355)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$3.run(AbstractTextEditor.java:435)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:599)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementDirtyStateChanged(AbstractTextEditor.java:438)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.dirtyStateChanged(TextFileDocumentProvider.java:288)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$3.run(TextFileBufferManager.java:706)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireDirtyStateChanged(TextFileBufferManager.java:704)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer$DocumentListener.documentChanged(ResourceTextFileBuffer.java:77)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:769)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:736)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:721)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:796)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1191)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1210)
+	at org.eclipse.jface.text.FindReplaceDocumentAdapter.findReplace(FindReplaceDocumentAdapter.java:213)
+	at org.eclipse.jface.text.FindReplaceDocumentAdapter.replace(FindReplaceDocumentAdapter.java:604)
+	at org.eclipse.jface.text.TextViewer$FindReplaceTarget.replaceSelection(TextViewer.java:831)
+	at org.eclipse.ui.texteditor.FindReplaceTarget.replaceSelection(FindReplaceTarget.java:141)
+	at com.adobe.flexide.editorcore.editor.FlexFindReplaceTarget.replaceSelection(FlexFindReplaceTarget.java:199)
+	at org.eclipse.ui.texteditor.FindReplaceDialog.replaceSelection(FindReplaceDialog.java:899)
+	at org.eclipse.ui.texteditor.FindReplaceDialog.replaceAll(FindReplaceDialog.java:1501)
+	at org.eclipse.ui.texteditor.FindReplaceDialog.access$40(FindReplaceDialog.java:1482)
+	at org.eclipse.ui.texteditor.FindReplaceDialog$1$ReplaceAllRunnable.run(FindReplaceDialog.java:1342)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.FindReplaceDialog.performReplaceAll(FindReplaceDialog.java:1348)
+	at org.eclipse.ui.texteditor.FindReplaceDialog.access$30(FindReplaceDialog.java:1331)
+	at org.eclipse.ui.texteditor.FindReplaceDialog$4.widgetSelected(FindReplaceDialog.java:355)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY CodeModel 4 1 2016-07-05 10:47:33.972
+!MESSAGE Parsing error
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.fillInOffsets(NodeBase.java:527)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ExpressionNode.normalize(ExpressionNode.java:66)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.setChildren(VariableNode.java:116)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.VariableNode.normalize(VariableNode.java:103)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.setChildren(FunctionNode.java:152)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.FunctionNode.normalize(FunctionNode.java:177)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.setChildren(ClassNode.java:224)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.ClassNode.normalize(ClassNode.java:232)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.addChildInOrder(TreeNode.java:150)
+	at com.adobe.flexbuilder.codemodel.internal.tree.PackageNode.setChildren(PackageNode.java:106)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:471)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.BaseDefinitionNode.normalize(BaseDefinitionNode.java:84)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.normalize(NodeBase.java:467)
+	at com.adobe.flexbuilder.codemodel.internal.tree.TreeNode.normalize(TreeNode.java:122)
+	at com.adobe.flexbuilder.codemodel.internal.tree.NodeBase.postProcess(NodeBase.java:440)
+	at com.adobe.flexbuilder.codemodel.internal.parsing.BaseASTreeParser.parseFile(BaseASTreeParser.java:180)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.BaseFileHandler.parseToASTree(BaseFileHandler.java:244)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ASFileHandler.parseFile(ASFileHandler.java:101)
+	at com.adobe.flexbuilder.codemodel.internal.resourcehandlers.ResourceHandlerManager.parseFile(ResourceHandlerManager.java:242)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.parseFile(Project.java:1137)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.addUnsavedFile(Project.java:705)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredFiles(Project.java:799)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.processDeferredUpdates(Project.java:771)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.getLiveTreeBaseNode(Project.java:1174)
+	at com.adobe.flexbuilder.codemodel.internal.project.Project.findFileNodeInProject(Project.java:1238)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getBaseFileNode(BaseASModel.java:739)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getOffsetInformation(BaseASModel.java:1424)
+	at com.adobe.flexide.as.core.document.internal.BaseASModel.getOffsetInformation(BaseASModel.java:1416)
+	at com.adobe.flexbuilder.debug.ui.variables.FlexDebugHover.getExpression(FlexDebugHover.java:132)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.update(FlexEditorWatchAction.java:149)
+	at com.adobe.flexbuilder.debug.ui.actions.FlexEditorWatchAction.selectionChanged(FlexEditorWatchAction.java:104)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:289)
+	at org.eclipse.ui.internal.ViewerActionBuilder$ViewerContribution.selectionChanged(ViewerActionBuilder.java:191)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:164)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:162)
+	at org.eclipse.jface.text.TextViewer.fireSelectionChanged(TextViewer.java:2732)
+	at org.eclipse.jface.text.TextViewer.selectionChanged(TextViewer.java:2711)
+	at org.eclipse.jface.text.TextViewer$4.widgetSelected(TextViewer.java:1830)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:240)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.StyledText.sendSelectionEvent(StyledText.java:8035)
+	at org.eclipse.swt.custom.StyledText.clearSelection(StyledText.java:1710)
+	at org.eclipse.swt.custom.StyledText.doMouseLocationChange(StyledText.java:2811)
+	at org.eclipse.swt.custom.StyledText.handleMouseDown(StyledText.java:6002)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5637)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-07-05 14:15:34.014
+!MESSAGE Error getting breakpoint text
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.getHitCount(FlexBreakpoint.java:263)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.getTextWithoutStatus(FlexLineBreakpoint.java:374)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.getText(FlexBreakpoint.java:243)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.getMessage(FlexLineBreakpoint.java:245)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.updateMessageAttribute(FlexBreakpoint.java:191)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:142)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.removeInstantiationStatus(FlexBreakpoint.java:114)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.clearBreakpointLocations(FlexBreakpointMap.java:122)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.uninstantiate(FlexLineBreakpoint.java:557)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.uninstantiateBreakpoint(FlexDebugTarget.java:1194)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$15(FlexDebugTarget.java:1191)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$2.run(FlexDebugTarget.java:1232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2016-07-05 14:15:34.016
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-07-05 14:23:52.370
+!MESSAGE Error getting breakpoint text
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.getHitCount(FlexBreakpoint.java:263)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.getTextWithoutStatus(FlexLineBreakpoint.java:374)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.getText(FlexBreakpoint.java:243)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.getMessage(FlexLineBreakpoint.java:245)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.updateMessageAttribute(FlexBreakpoint.java:191)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:142)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.removeInstantiationStatus(FlexBreakpoint.java:114)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.clearBreakpointLocations(FlexBreakpointMap.java:122)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.uninstantiate(FlexLineBreakpoint.java:557)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.uninstantiateBreakpoint(FlexDebugTarget.java:1194)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$15(FlexDebugTarget.java:1191)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$2.run(FlexDebugTarget.java:1232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2016-07-05 14:23:52.370
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-07-05 14:23:52.376
+!MESSAGE 找不到标记 id 375。
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 找不到标记 id 375。
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:57)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:237)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.updateMessageAttribute(FlexBreakpoint.java:196)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:142)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.removeInstantiationStatus(FlexBreakpoint.java:114)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.clearBreakpointLocations(FlexBreakpointMap.java:122)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.uninstantiate(FlexLineBreakpoint.java:557)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.uninstantiateBreakpoint(FlexDebugTarget.java:1194)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$15(FlexDebugTarget.java:1191)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$2.run(FlexDebugTarget.java:1232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 376 2016-07-05 14:23:52.377
+!MESSAGE 找不到标记 id 375。
+!SESSION 2016-07-06 10:23:45.403 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-06 10:23:56.947
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-06 10:24:05.371
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-06 10:24:05.372
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@12062da)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@12062da)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-06 10:24:05.372
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@5f299d)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@5f299d)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-07-06 16:58:35.520 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-07-06 16:58:37.078
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-06 16:58:48.144
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-06 16:58:56.835
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-06 16:58:56.836
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1d392b9)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1d392b9)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-06 16:58:56.836
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@145c108)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@145c108)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-07-09 14:15:26.923 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-09 14:15:42.131
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-09 14:15:47.411
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-09 14:15:47.411
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1496982)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@1496982)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-09 14:15:47.411
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@ae11f6)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@ae11f6)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-07-09 14:53:19.254
+!MESSAGE Error getting breakpoint text
+!STACK 1
+org.eclipse.debug.core.DebugException: 断点没有相关联的标记。
+	at org.eclipse.debug.core.model.Breakpoint.ensureMarker(Breakpoint.java:268)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.getHitCount(FlexBreakpoint.java:263)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.getTextWithoutStatus(FlexLineBreakpoint.java:374)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.getText(FlexBreakpoint.java:243)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.getMessage(FlexLineBreakpoint.java:245)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.updateMessageAttribute(FlexBreakpoint.java:191)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:142)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.removeInstantiationStatus(FlexBreakpoint.java:114)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.clearBreakpointLocations(FlexBreakpointMap.java:122)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.uninstantiate(FlexLineBreakpoint.java:557)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.uninstantiateBreakpoint(FlexDebugTarget.java:1194)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$15(FlexDebugTarget.java:1191)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$2.run(FlexDebugTarget.java:1232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2016-07-09 14:53:19.255
+!MESSAGE 断点没有相关联的标记。
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-07-09 14:53:19.258
+!MESSAGE 找不到标记 id 412。
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 找不到标记 id 412。
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:57)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:237)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.updateMessageAttribute(FlexBreakpoint.java:196)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.changeInstantiationStatusCount(FlexBreakpoint.java:142)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpoint.removeInstantiationStatus(FlexBreakpoint.java:114)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexBreakpointMap.clearBreakpointLocations(FlexBreakpointMap.java:122)
+	at com.adobe.flexbuilder.debug.breakpoints.FlexLineBreakpoint.uninstantiate(FlexLineBreakpoint.java:557)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.uninstantiateBreakpoint(FlexDebugTarget.java:1194)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget.access$15(FlexDebugTarget.java:1191)
+	at com.adobe.flexbuilder.debug.model.FlexDebugTarget$2.run(FlexDebugTarget.java:1232)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 376 2016-07-09 14:53:19.258
+!MESSAGE 找不到标记 id 412。
+!SESSION 2016-07-11 08:34:25.111 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-11 08:35:42.691
+!MESSAGE Product = null version = 460 edition = stnd
+!SESSION 2016-07-11 20:02:53.644 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-11 20:03:03.082
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-11 20:03:07.545
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-11 20:03:07.545
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@751a9b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@751a9b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-11 20:03:07.545
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@25e068)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@25e068)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-07-12 08:24:01.147 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-12 08:24:17.347
+!MESSAGE Product = null version = 460 edition = stnd
+!SESSION 2016-07-13 17:41:10.741 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-13 17:41:38.975
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-13 17:42:14.741
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-13 17:42:14.741
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@101dfa5)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@101dfa5)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-13 17:42:14.741
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1ff7e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@1ff7e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2016-07-14 08:30:35.046 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2016-07-14 08:32:01.162
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2016-07-14 08:32:58.685
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-14 08:32:58.685
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@199ed64)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@199ed64)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-07-14 08:32:58.685
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@b04214)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@b04214)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)

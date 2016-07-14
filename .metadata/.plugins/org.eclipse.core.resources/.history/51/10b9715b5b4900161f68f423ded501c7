@@ -1,0 +1,91 @@
+package
+{
+	import enum.EnumConfig;
+	
+	import flash.display.DisplayObject;
+	import flash.display.Sprite;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
+	import flash.events.ContextMenuEvent;
+	import flash.events.MouseEvent;
+	import flash.system.Capabilities;
+	import flash.text.TextField;
+	import flash.ui.ContextMenu;
+	import flash.ui.ContextMenuItem;
+	
+	import gs.TweenLite;
+	
+	import morn.core.components.List;
+	
+	import org.osmf.layout.ScaleMode;
+	
+	import view.Barrier;
+	import view.VMap;
+
+	/**
+	 * 
+	 * @author hmxie
+	 * 
+	 */	
+	public class AStar extends Sprite
+	{
+		private var _map:VMap;
+		private var _textSpr:Sprite;
+		private var _moveBox:Barrier;
+		
+		private var _barrierArr:Array = [];
+		/**
+		 * 
+		 * 
+		 */		
+		public function AStar()
+		{
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.align = StageAlign.TOP_LEFT;
+			
+			_map = new VMap();
+			addChild(_map);
+			_map.x = 100;
+			_map.y = 100;
+			
+			_map.addEventListener( MouseEvent.CLICK, onClick);
+			
+			//生成障碍物
+			var store:Object = new Object();
+			var i:int = 0;
+			while(i < EnumConfig.BARRIER)
+			{
+				var random:int = Math.random() * EnumConfig.HORIZONTAL * EnumConfig.VERTICAL;
+				if(store[random] == null)
+				{
+					store[random] = true;
+				}
+				else
+				{
+					continue;
+				}
+				i++;
+				var barrier:Barrier = new Barrier();
+				_map.addChild(barrier);
+				barrier.x = (random%EnumConfig.HORIZONTAL)*(EnumConfig.WIDTH)+EnumConfig.LINE_STYLE/2;
+				barrier.y = int(random/EnumConfig.HORIZONTAL)*(EnumConfig.WIDTH)+EnumConfig.LINE_STYLE/2;
+				_barrierArr.push(random);
+			}
+			//移动物
+			_moveBox = new Barrier(EnumConfig.MOVEBOX_COLOR);
+			i = 0;
+			while(store[i] != null)
+			{
+				i++;
+			}
+			_moveBox.x = (i%EnumConfig.HORIZONTAL)*(EnumConfig.WIDTH)+EnumConfig.LINE_STYLE/2;
+			_moveBox.y = int(i/EnumConfig.HORIZONTAL)*(EnumConfig.WIDTH)+EnumConfig.LINE_STYLE/2;
+			_map.addChild(_moveBox);
+		}
+		
+		protected function onClick(event:MouseEvent):void
+		{
+			(event.target as DisplayObject).x
+		}
+	}
+}

@@ -1,0 +1,38 @@
+package view
+{
+	import enum.EnumConfig;
+	
+	import flash.display.Sprite;
+
+	public class VMap extends Sprite
+	{
+		public function VMap()
+		{
+			init()
+		}
+		
+		private function init():void
+		{
+			this.graphics.beginFill( EnumConfig.FILL_COLOR);
+			this.graphics.lineStyle( EnumConfig.LINE_STYLE, EnumConfig.LINE_COLOR);
+			//画框
+			this.graphics.moveTo(0,0);
+			this.graphics.lineTo( EnumConfig.HORIZONTAL * EnumConfig.WIDTH, 0);
+			this.graphics.lineTo( EnumConfig.HORIZONTAL * EnumConfig.WIDTH, EnumConfig.VERTICAL * EnumConfig.WIDTH);
+			this.graphics.lineTo( 0, EnumConfig.VERTICAL * EnumConfig.WIDTH);
+			this.graphics.lineTo( 0, 0);
+			//画横线
+			for(var i:int = 1; i < EnumConfig.HORIZONTAL; i++)
+			{
+				this.graphics.moveTo( i * EnumConfig.WIDTH, 0);
+				this.graphics.lineTo( i * EnumConfig.WIDTH, EnumConfig.VERTICAL * EnumConfig.WIDTH);
+			}
+			//画竖线
+			for(i = 1; i < EnumConfig.VERTICAL; i++){
+				this.graphics.moveTo( 0, i * EnumConfig.WIDTH);
+				this.graphics.lineTo( EnumConfig.HORIZONTAL * EnumConfig.WIDTH, i * EnumConfig.WIDTH);
+			}
+			this.graphics.endFill();
+		}
+	}
+}

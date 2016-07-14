@@ -1,0 +1,9 @@
+package
+{
+	public class Test4
+	{
+		public function Test4()
+		{
+		}
+	}
+}

@@ -1,0 +1,109 @@
+package
+{
+	import flash.display.BlendMode;
+	import flash.display.Sprite;
+	import flash.events.MouseEvent;
+	import flash.utils.getTimer;
+
+	public class Test2 extends Sprite
+	{
+		private var _drawSpr:Sprite;
+		
+		private const PENCIL_SIZE:Number = 2;
+		private const ERASER_SIZE:Number = 7;
+		
+		private var mAction:String = BlendMode.NORMAL;
+		
+		public function Test2()
+		{
+			_drawSpr = new Sprite();
+			_drawSpr.graphics.beginFill(0xff0000);
+			_drawSpr.graphics.drawRect(0,0,800,600);
+			_drawSpr.graphics.endFill();
+			addChild(_drawSpr);
+			
+			var btnPen:Sprite = new Sprite();
+			btnPen.graphics.beginFill(0x00ff00);
+			btnPen.graphics.drawRect(0,0,40,30);
+			btnPen.graphics.endFill();
+			addChild(btnPen);
+			btnPen.x = -50;
+			btnPen.y = 100;
+			btnPen.addEventListener(MouseEvent.CLICK,onPenClick)
+			
+			var btnClear:Sprite = new Sprite();
+			btnClear.graphics.beginFill(0x00ff00);
+			btnClear.graphics.drawRect(0,0,40,30);
+			btnClear.graphics.endFill();
+			addChild(btnClear);
+			btnClear.x = -50;
+			btnClear.y = 200;
+			btnClear.addEventListener(MouseEvent.CLICK,onClearClick)
+			
+			_drawSpr.addEventListener(MouseEvent.MOUSE_DOWN, _onMouseDown);
+		}
+		
+		protected function onClearClick(event:MouseEvent):void
+		{
+			
+		}
+		
+		protected function onPenClick(event:MouseEvent):void
+		{
+			
+		}
+		
+		protected function _onMouseUp(event:MouseEvent):void
+		{
+			_drawSpr.graphics.lineTo(event.stageX,event.stageY);
+			_drawSpr.graphics.endFill();
+			_drawSpr.removeEventListener(MouseEvent.MOUSE_MOVE, _onMouseMove);
+			_drawSpr.removeEventListener(MouseEvent.MOUSE_UP, _onMouseUp);
+			_drawSpr.removeEventListener(MouseEvent.MOUSE_OUT, _onMouseOut);
+			_drawSpr.removeEventListener(MouseEvent.MOUSE_OVER, _onMouseOver);
+		}
+		
+		protected function _onMouseMove(event:MouseEvent):void
+		{
+			_drawSpr.graphics.lineTo(event.stageX,event.stageY);
+			_drawSpr.graphics.moveTo(event.stageX,event.stageY);
+			trace("===========MouseMove"+getTimer());
+		}
+		
+		protected function _onMouseDown(event:MouseEvent):void
+		{
+			
+			_drawSpr.addEventListener(MouseEvent.MOUSE_UP, _onMouseUp);
+			_drawSpr.addEventListener(MouseEvent.MOUSE_OUT, _onMouseOut);
+			_drawSpr.addEventListener(MouseEvent.MOUSE_OVER, _onMouseOver);
+			_drawSpr.addEventListener(MouseEvent.MOUSE_MOVE, _onMouseMove);
+			_drawSpr.graphics.beginFill(0xffffff);
+			_drawSpr.graphics.lineStyle(2,0x00ff00);
+			_drawSpr.graphics.moveTo(event.stageX,event.stageY);
+			trace("===========MouseDown"+getTimer());
+		}
+		
+		protected function _onMouseOver(event:MouseEvent):void
+		{
+			_drawSpr.graphics.beginFill(0xffffff);
+			_drawSpr.graphics.lineStyle(2,0x00ff00);
+			_drawSpr.graphics.moveTo(event.stageX,event.stageY);
+			trace("===========MouseOver"+getTimer());
+			
+			_drawSpr.addEventListener(MouseEvent.MOUSE_MOVE, _onMouseMove);
+		}
+		
+		protected function _onMouseOut(event:MouseEvent):void
+		{
+//			_drawSpr.graphics.lineTo(event.stageX,event.stageY);
+			_drawSpr.graphics.endFill();
+			trace("===========MouseOut"+getTimer());
+			
+			_drawSpr.removeEventListener(MouseEvent.MOUSE_MOVE, _onMouseMove);
+		}
+		
+		private function remove():void{
+			
+		}
+	}
+}

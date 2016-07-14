@@ -1,0 +1,9 @@
+package
+{
+	public class Node
+	{
+		public function Node()
+		{
+		}
+	}
+}

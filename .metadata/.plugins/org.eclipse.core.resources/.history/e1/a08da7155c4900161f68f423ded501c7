@@ -1,0 +1,20 @@
+package enum
+{
+	public class EnumConfig
+	{
+		public static const HORIZONTAL:int = 40;//横格子个数
+		public static const VERTICAL:int = 30;//竖格子个数
+		public static const WIDTH:int = 20;//格子宽度
+		public static const LINE_STYLE:int = 2;//线条宽度
+		public static const FILL_COLOR:int = 0x000000;
+		public static const LINE_COLOR:int = 0x00ff00;//线条颜色
+		public static const BARRIER:int = 100;//障碍物个数
+		
+		public static const BARRIER_COLOR:int = 0xff00ff;//障碍物颜色
+		public static const MOVEBOX_COLOR:int = 0xff0000;//移动物颜色
+		
+		public function EnumConfig()
+		{
+		}
+	}
+}

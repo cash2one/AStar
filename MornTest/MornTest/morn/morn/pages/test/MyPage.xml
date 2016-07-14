@@ -1,0 +1,5 @@
+<View width="600" height="400" sceneColor="0xffffff" layers="1,1,0,0,第 1 层">
+  <List layers="1,1,0,0,第 1 层" layer="1" x="0" y="0" spaceY="5" repeatY="3">
+    <UIView source="test/ListItem.xml" layer="1" name="render"/>
+  </List>
+</View>

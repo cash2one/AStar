@@ -1,0 +1,22 @@
+package view
+{
+	import enum.EnumConfig;
+	
+	import flash.display.Sprite;
+
+	public class Barrier extends Sprite
+	{
+		public function Barrier(color:int = EnumConfig.BARRIER_COLOR)
+		{
+			init(color);
+		}
+		
+		private function init(color:int):void
+		{
+			graphics.beginFill(color);
+			graphics.lineStyle(1,color)
+			graphics.drawRect(0,0,EnumConfig.WIDTH-EnumConfig.LINE_STYLE,EnumConfig.WIDTH-EnumConfig.LINE_STYLE);
+			graphics.endFill();
+		}
+	}
+}

@@ -1,0 +1,34 @@
+<lib>
+  <bitmapdata class="png.comp.bg" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\bg.png" compression="false" quality="80" create="1466733336895473"/>
+  <bitmapdata class="png.comp.blank" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\blank.png" compression="false" quality="80" create="1466733336896933"/>
+  <bitmapdata class="png.comp.btn_close" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\btn_close.png" compression="false" quality="80" create="1466733336896938"/>
+  <bitmapdata class="png.comp.button" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\button.png" compression="false" quality="80" create="1466733336897846"/>
+  <bitmapdata class="png.comp.checkbox" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\checkbox.png" compression="false" quality="80" create="1466733336898351"/>
+  <bitmapdata class="png.comp.clip_num" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\clip_num.png" compression="false" quality="80" create="14667333368987364"/>
+  <bitmapdata class="png.comp.clip_selectBox" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\clip_selectBox.png" compression="false" quality="80" create="14667333368991001"/>
+  <bitmapdata class="png.comp.clip_tree_arrow" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\clip_tree_arrow.png" compression="false" quality="80" create="14667333369001007"/>
+  <bitmapdata class="png.comp.clip_tree_folder" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\clip_tree_folder.png" compression="false" quality="80" create="14667333369001113"/>
+  <bitmapdata class="png.comp.combobox" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\combobox.png" compression="false" quality="80" create="1466733336901634"/>
+  <bitmapdata class="png.comp.hscroll$bar" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\hscroll$bar.png" compression="false" quality="80" create="14667333369011339"/>
+  <bitmapdata class="png.comp.hscroll$down" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\hscroll$down.png" compression="false" quality="80" create="14667333369021745"/>
+  <bitmapdata class="png.comp.hscroll$up" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\hscroll$up.png" compression="false" quality="80" create="14667333369021684"/>
+  <bitmapdata class="png.comp.hscroll" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\hscroll.png" compression="false" quality="80" create="14667333369032830"/>
+  <bitmapdata class="png.comp.hslider$bar" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\hslider$bar.png" compression="false" quality="80" create="14667333369031248"/>
+  <bitmapdata class="png.comp.hslider" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\hslider.png" compression="false" quality="80" create="14667333369042913"/>
+  <bitmapdata class="png.comp.image" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\image.png" compression="false" quality="80" create="146673333690561202"/>
+  <bitmapdata class="png.comp.label" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\label.png" compression="false" quality="80" create="14667333369052909"/>
+  <bitmapdata class="png.comp.linkbutton" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\linkbutton.png" compression="false" quality="80" create="14667333369062909"/>
+  <bitmapdata class="png.comp.progress$bar" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\progress$bar.png" compression="false" quality="80" create="1466733336906303"/>
+  <bitmapdata class="png.comp.progress" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\progress.png" compression="false" quality="80" create="1466733336907280"/>
+  <bitmapdata class="png.comp.radio" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\radio.png" compression="false" quality="80" create="14667333369071096"/>
+  <bitmapdata class="png.comp.radiogroup" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\radiogroup.png" compression="false" quality="80" create="14667333369081096"/>
+  <bitmapdata class="png.comp.tab" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\tab.png" compression="false" quality="80" create="14667333369091238"/>
+  <bitmapdata class="png.comp.textarea" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\textarea.png" compression="false" quality="80" create="14667333369101068"/>
+  <bitmapdata class="png.comp.textinput" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\textinput.png" compression="false" quality="80" create="14667333369101068"/>
+  <bitmapdata class="png.comp.vscroll$bar" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\vscroll$bar.png" compression="false" quality="80" create="1466733336911450"/>
+  <bitmapdata class="png.comp.vscroll$down" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\vscroll$down.png" compression="false" quality="80" create="1466733336911736"/>
+  <bitmapdata class="png.comp.vscroll$up" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\vscroll$up.png" compression="false" quality="80" create="1466733336912780"/>
+  <bitmapdata class="png.comp.vscroll" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\vscroll.png" compression="false" quality="80" create="14667333369132825"/>
+  <bitmapdata class="png.comp.vslider$bar" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\vslider$bar.png" compression="false" quality="80" create="14667333369131248"/>
+  <bitmapdata class="png.comp.vslider" file="D:\GitAstar\MornTest\MornTest\morn\morn\assets\comp\vslider.png" compression="false" quality="80" create="14667333369141052"/>
+</lib>
